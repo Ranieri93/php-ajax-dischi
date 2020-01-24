@@ -1,0 +1,26 @@
+.card {
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    margin-bottom: 30px;
+
+
+    p {
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    small {
+        display: block;
+
+        &.artista {
+            color: #888;
+        }
+        &.anno {
+            color: white;
+        }
+    }
+
+
+}

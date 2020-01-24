@@ -10,9 +10,10 @@ $(document).ready(function(){
     $.ajax({
         'url':'data.php',
         'method': 'GET',
+        'dataType': 'json',// posso inserire questa istruzione alla chiamata per il parse
         'success': function(data) {
-            var newdata = JSON.parse(data);
-            var dischi = newdata.response;
+            //var newdata = JSON.parse(data); // o farlo direttamente nella function tramite JSON.parse
+            var dischi = data.response;
             for (var i = 0; i < dischi.length; i++) {
                 var disco_singolo = dischi[i];
                 var copertinaImg = disco_singolo.poster;
